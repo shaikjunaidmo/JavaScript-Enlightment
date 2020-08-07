@@ -1,3 +1,4 @@
+// encapsulation using objects, creates object chains
 var outer_object = {
   inner_object_1: {
     prop1: function() {
@@ -20,6 +21,7 @@ var outer_object = {
     }
   }
 };
+console.log(outer_object);
 
 module.exports.prop1 = outer_object.inner_object_1.prop1;
 module.exports.prop2 = outer_object.inner_object_2.prop2;
